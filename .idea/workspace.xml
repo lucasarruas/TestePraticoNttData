@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd890176-1962-4e3c-8316-925d443b5256" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/builder/ConexaoMySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/LoginPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/PopularTabela.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/pageObject/BasePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/TestePratico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/ControllerProdutoPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/PopularTabelaPedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/LoginPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/LoginPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/PopularTabela.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/PopularTabelaUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/pageObject/BasePO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/pageObject/BasePO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/TestePratico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/TestePratico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/page/LoginPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testeAutomacao/page/LoginPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/page/PopularTabela.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/pageObject/BasePO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testeAutomacao/pageObject/BasePO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/teste/TestePratico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testeAutomacao/teste/TestePratico.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +58,7 @@
     "JUnit.AppTest.TS0001_popularATabelaDeAcordoComORetornoDaApi.executor": "Run",
     "JUnit.AppTest.executor": "Run",
     "JUnit.Test.executor": "Run",
+    "JUnit.TestePratico.cenario2.executor": "Run",
     "JUnit.TestePratico.cenario4.executor": "Run",
     "JUnit.TestePratico.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -69,9 +72,14 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="testeAutomacao.page" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.TestePratico">
-    <configuration name="PopularTabela" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testeAutomacao.page.PopularTabela" />
+    <configuration name="PopularTabelaUsuario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testeAutomacao.page.PopularTabelaUsuario" />
       <module name="TestePraticoNttData" />
       <extension name="coverage">
         <pattern>
@@ -98,22 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.TS0001_devePopularATabelaDeAcordoComRetornoDaAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestePraticoNttData" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testeAutomacao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testeAutomacao" />
-      <option name="MAIN_CLASS_NAME" value="testeAutomacao.AppTest" />
-      <option name="METHOD_NAME" value="TS0001_devePopularATabelaDeAcordoComRetornoDaAPI" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestePratico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestePraticoNttData" />
       <extension name="coverage">
@@ -125,6 +117,22 @@
       <option name="PACKAGE_NAME" value="testeAutomacao.teste" />
       <option name="MAIN_CLASS_NAME" value="testeAutomacao.teste.TestePratico" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestePratico.cenario2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestePraticoNttData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeAutomacao.teste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testeAutomacao.teste" />
+      <option name="MAIN_CLASS_NAME" value="testeAutomacao.teste.TestePratico" />
+      <option name="METHOD_NAME" value="cenario2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestePratico" />
+        <item itemvalue="JUnit.TestePratico.cenario2" />
         <item itemvalue="JUnit.TestePratico.cenario4" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="Application.PopularTabela" />
-        <item itemvalue="JUnit.AppTest.TS0001_devePopularATabelaDeAcordoComRetornoDaAPI" />
+        <item itemvalue="Application.PopularTabelaUsuario" />
       </list>
     </recent_temporary>
   </component>

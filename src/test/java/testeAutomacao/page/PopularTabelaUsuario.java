@@ -10,17 +10,13 @@ import java.io.InputStreamReader;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class PopularTabela {
+public class PopularTabelaUsuario {
     private static final String API_URL = "https://n8n.apptrix.app/webhook/a1841391-56ad-4a75-bfeb-e005b673c756";
     private static final String DB_URL = "jdbc:mysql://localhost:3306/banco_teste_automacao";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "125429";
 
-    //public static void main(String[] args) {
-        //String resultado = popularBanco();
-        //System.out.println(resultado);
-    //}
-    public PopularTabela(){}
+    public PopularTabelaUsuario(){}
 
     public static String popularBanco() {
         try (Connection dbConn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {

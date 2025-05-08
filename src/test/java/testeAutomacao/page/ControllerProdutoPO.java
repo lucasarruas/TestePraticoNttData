@@ -36,9 +36,22 @@ public class ControllerProdutoPO extends BasePO {
     @FindBy(id = "orderNumberLabel")
     public static WebElement labelNumeroOrdem;
 
-    public ControllerProdutoPO(WebDriver driver) {
-        super(driver);
-    }
+    @FindBy(id = "autoComplete")
+    public static WebElement inputPesquisa;
+
+    @FindBy(id = "menuSearch")
+    public static WebElement btnPesquisa;
+
+    @FindBy(css = "#output > div > div.top6Products > a.product.ng-scope")
+    public static WebElement selecionaProduto;
+
+    @FindBy(css = "#bunny.productColor.ng-scope.BLACK")
+    public static WebElement alterarCor;
+
+    @FindBy(css = "#productProperties > div.smoolMargin > e-sec-plus-minus > div > div.plus")
+    public static WebElement alteraQuantidade;
+
+    public ControllerProdutoPO(WebDriver driver) { super(driver);    }
 
 
 }

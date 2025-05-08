@@ -38,7 +38,7 @@ public class LoginPO extends BasePO {
     public static void executarAcaoDeLogar() throws InterruptedException {
         Thread.sleep(5000);
         btnLogin.click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         escrever(inputUsuario,"JayGatsby");
         escrever(inputSenha,"Teste@123");
 

@@ -6,6 +6,7 @@ import org.junit.runners.MethodSorters;
 import testeAutomacao.page.ControllerProdutoPO;
 import testeAutomacao.page.LoginPO;
 import testeAutomacao.page.PopularTabelaUsuario;
+import testeAutomacao.pageObject.BasePO;
 
 import java.sql.SQLException;
 
@@ -16,6 +17,7 @@ public class TestePratico extends BaseTest{
 
     private  static LoginPO loginPage;
     private static ControllerProdutoPO controleDeProdutoPage;
+    String nomeProduto = "HP PAVILION 15Z TOUCH LAPTOP";
 
     @BeforeClass
     public  static void prepararTestes() throws InterruptedException {
@@ -70,10 +72,29 @@ public class TestePratico extends BaseTest{
         assertEquals(true, codigoRastreamento);
         assertEquals(true, numeroOrdem);
         assertEquals("JayGatsby",LoginPO.spanUsuario.getText());
+
+        Thread.sleep(2000);
     }
 
     @org.junit.Test
     public void cenario3() throws InterruptedException {
+        Thread.sleep(4000);
+        ControllerProdutoPO.btnPesquisa.click();
+        BasePO.escrever(ControllerProdutoPO.inputPesquisa,nomeProduto);
+        Thread.sleep(2000);
+        ControllerProdutoPO.btnPesquisa.click();
+        Thread.sleep(3000);
+        ControllerProdutoPO.selecionaProduto.click();
+        Thread.sleep(3000);
+        ControllerProdutoPO.alterarCor.click();
+        Thread.sleep(3000);
+        ControllerProdutoPO.alteraQuantidade.click();
+        Thread.sleep(3000);
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        Thread.sleep(3000);
+        ControllerProdutoPO.btnCarrinho.click();
+        //ControllerProdutoPO.alterarCor.click();
         //LoginPO.executarAcaoDeLogar();
         //Thread.sleep(2000);
     }

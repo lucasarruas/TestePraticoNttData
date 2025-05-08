@@ -29,8 +29,8 @@ public abstract class BaseTest {
     /**
      * Metodo que finaliza o driver do navegador depois de qualquer classe de teste.
      */
-    @AfterClass
-    public  static void finalizar(){
-        driver.quit();
-    }
+    //@AfterClass
+    //public  static void finalizar(){
+        //driver.quit();
+    //}
 }

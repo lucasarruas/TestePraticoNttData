@@ -1,4 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd890176-1962-4e3c-8316-925d443b5256" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/builder/ConexaoMySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/LoginPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/PopularTabela.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/pageObject/BasePO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/TestePratico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/AppTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2wnRsQYPlJjnTLsZBoxdgFvDqDz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiRequest.executor": "Run",
+    "Application.ConexaoMySQL.executor": "Run",
+    "Application.DatabaseConnection.executor": "Run",
+    "Application.ManipularBD.executor": "Run",
+    "Application.PopularTabela.executor": "Run",
+    "Application.testeAutomacao.builder.ConexaoMySQL.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AppTest.TS0001_devePopularATabelaDeAcordoComRetornoDaAPI.executor": "Run",
+    "JUnit.AppTest.TS0001_popularATabelaDeAcordoComORetornoDaApi.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
+    "JUnit.Test.executor": "Run",
+    "JUnit.TestePratico.cenario4.executor": "Run",
+    "JUnit.TestePratico.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestePratico">
+    <configuration name="PopularTabela" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testeAutomacao.page.PopularTabela" />
+      <module name="TestePraticoNttData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeAutomacao.page.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestePraticoNttData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeAutomacao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testeAutomacao" />
+      <option name="MAIN_CLASS_NAME" value="testeAutomacao.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.TS0001_devePopularATabelaDeAcordoComRetornoDaAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestePraticoNttData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeAutomacao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testeAutomacao" />
+      <option name="MAIN_CLASS_NAME" value="testeAutomacao.AppTest" />
+      <option name="METHOD_NAME" value="TS0001_devePopularATabelaDeAcordoComRetornoDaAPI" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestePratico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestePraticoNttData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeAutomacao.teste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testeAutomacao.teste" />
+      <option name="MAIN_CLASS_NAME" value="testeAutomacao.teste.TestePratico" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestePratico.cenario4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestePraticoNttData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testeAutomacao.teste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testeAutomacao.teste" />
+      <option name="MAIN_CLASS_NAME" value="testeAutomacao.teste.TestePratico" />
+      <option name="METHOD_NAME" value="cenario4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestePratico" />
+        <item itemvalue="JUnit.TestePratico.cenario4" />
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.PopularTabela" />
+        <item itemvalue="JUnit.AppTest.TS0001_devePopularATabelaDeAcordoComRetornoDaAPI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd890176-1962-4e3c-8316-925d443b5256" name="Changes" comment="" />
+      <created>1746675559534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746675559534</updated>
+    </task>
+    <servers />
+  </component>
 </project>

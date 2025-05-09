@@ -3,6 +3,8 @@ package testeAutomacao.teste;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import testeAutomacao.page.ControllerProdutoPO;
 import testeAutomacao.page.LoginPO;
 import testeAutomacao.page.PopularTabelaUsuario;
@@ -11,6 +13,7 @@ import testeAutomacao.pageObject.BasePO;
 import java.sql.SQLException;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestePratico extends BaseTest{
@@ -18,6 +21,7 @@ public class TestePratico extends BaseTest{
     private  static LoginPO loginPage;
     private static ControllerProdutoPO controleDeProdutoPage;
     String nomeProduto = "HP PAVILION 15Z TOUCH LAPTOP";
+    WebElement fundoPagina = driver.findElement(By.tagName("body"));
 
     @BeforeClass
     public  static void prepararTestes() throws InterruptedException {
@@ -54,6 +58,7 @@ public class TestePratico extends BaseTest{
 
     @org.junit.Test
     public void cenario2() throws InterruptedException {
+        Thread.sleep(4000);
         LoginPO.executarAcaoDeLogar();
         Thread.sleep(2000);
         driver.get("https://advantageonlineshopping.com/#/product/3");
@@ -73,7 +78,7 @@ public class TestePratico extends BaseTest{
         assertEquals(true, numeroOrdem);
         assertEquals("JayGatsby",LoginPO.spanUsuario.getText());
 
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
 
     @org.junit.Test
@@ -92,12 +97,48 @@ public class TestePratico extends BaseTest{
         Thread.sleep(3000);
         ControllerProdutoPO.btnAdicionarCarrinho.click();
         ControllerProdutoPO.btnAdicionarCarrinho.click();
+        Thread.sleep(4000);
+        driver.get("https://advantageonlineshopping.com/#/shoppingCart");
         Thread.sleep(3000);
-        ControllerProdutoPO.btnCarrinho.click();
-        //ControllerProdutoPO.alterarCor.click();
-        //LoginPO.executarAcaoDeLogar();
-        //Thread.sleep(2000);
+        String valorTotalCarrinho = ControllerProdutoPO.valorTotalCarrinho.getText();
+        Thread.sleep(2000);
+        ControllerProdutoPO.btnCheckOut2.click();
+        //ControllerProdutoPO.btnCheckOut2.click();
+        String valorTotalCheckOut = ControllerProdutoPO.valorTotalCheckOut.getText();
+        assertEquals(valorTotalCheckOut, valorTotalCarrinho);
+
+        Thread.sleep(2000);
     }
 
-
+    @org.junit.Test
+    public void cenario4() throws InterruptedException {
+        Thread.sleep(4000);
+        driver.get("https://advantageonlineshopping.com/#/shoppingCart");
+        Thread.sleep(4000);
+        ControllerProdutoPO.linkRemoveProduto.click();
+        Thread.sleep(1000);
+        driver.get("https://advantageonlineshopping.com/#/product/9");
+        Thread.sleep(5000);
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        Thread.sleep(2000);
+        fundoPagina.click();
+        Thread.sleep(1000);
+        driver.get("https://advantageonlineshopping.com/#/product/10");
+        Thread.sleep(5000);
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        Thread.sleep(2000);
+        fundoPagina.click();
+        Thread.sleep(1000);
+        driver.get("https://advantageonlineshopping.com/#/product/16");
+        Thread.sleep(4000);
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        ControllerProdutoPO.btnAdicionarCarrinho.click();
+        Thread.sleep(2000);
+        driver.get("https://advantageonlineshopping.com/#/shoppingCart");
+        Thread.sleep(1000);
+        ControllerProdutoPO.linkRemoveProduto.click();
+        assertEquals("(2)", ControllerProdutoPO.quantidadeItensCarrinho.getText());
+        }
 }

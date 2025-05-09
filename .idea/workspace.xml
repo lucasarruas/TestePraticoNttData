@@ -7,12 +7,8 @@
     <list default="true" id="dd890176-1962-4e3c-8316-925d443b5256" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/ControllerProdutoPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/ControllerProdutoPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/LoginPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/page/LoginPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/TestePratico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testeAutomacao/teste/TestePratico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/page/ControllerProdutoPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testeAutomacao/page/ControllerProdutoPO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/page/LoginPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testeAutomacao/page/LoginPO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/teste/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testeAutomacao/teste/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testeAutomacao/teste/TestePratico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testeAutomacao/teste/TestePratico.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2wnRsQYPlJjnTLsZBoxdgFvDqDz" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,7 +60,9 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"

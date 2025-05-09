@@ -51,6 +51,27 @@ public class ControllerProdutoPO extends BasePO {
     @FindBy(css = "#productProperties > div.smoolMargin > e-sec-plus-minus > div > div.plus")
     public static WebElement alteraQuantidade;
 
+    @FindBy(css = "#toolTipCart > div > table > tfoot > tr:nth-child(1) > td:nth-child(2) > span")
+    public static WebElement valorTotalCarrinho;
+
+    @FindBy(css = "#product > td:nth-child(3) > p")
+    public static WebElement valorTotalCheckOut;
+
+    @FindBy(css = "#checkOutButton")
+    public static WebElement btnCheckOut2;
+
+    @FindBy(css="#shoppingCart > table > tbody > tr > td:nth-child(6) > span > a.remove.red.ng-scope")
+    public static WebElement linkRemoveProduto;
+
+    @FindBy(css = "body > div.uiview.ng-scope > section > article > h3 > span")
+    public static WebElement quantidadeItensCarrinho;
+
+    @FindBy(css = "#shoppingCart > table > thead > tr > th.imgHeader")
+    public static WebElement clicarEmBranco;
+
+    @FindBy(css = "#toolTipCart > div > table > tfoot > tr:nth-child(1) > td:nth-child(1) > span > label")
+    public static WebElement adicionado1Elemento;
+
     public ControllerProdutoPO(WebDriver driver) { super(driver);    }
 
 
